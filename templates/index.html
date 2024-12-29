@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Bell - Home</title>
+</head>
+<body>
+    <h1>Welcome to Project Bell</h1>
+    <p>Enter your tracking number to get started!</p>
+    <form action="{{ url_for('track') }}" method="post">
+        <input type="text" name="tracking_number" placeholder="Enter Tracking Number" required>
+        <button type="submit">Track</button>
+    </form>
+</body>
+</html>
